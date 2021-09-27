@@ -1,0 +1,15 @@
+
+<div class="bg-light p-5 rounded-lg m-3">
+<p class ="fs-1">
+  <strong>Player:</strong>
+  <%= @high_score.player %>
+  </p>
+  
+  <p>
+  <strong>Score:</strong>
+  <%= @high_score.score %>
+  </p>
+  </div>
+
+<%= link_to 'Edit', edit_high_score_path(@high_score), class:"btn btn-secondary" %> 
+<%= link_to 'Back', high_scores_path, class:"btn btn-secondary" %>
